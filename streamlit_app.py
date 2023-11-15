@@ -124,10 +124,14 @@ if st.button("Analyze Sentiment"):
         st.header("Analysis Results:")
 
         st.write(f"Number of Results: {num_results}")
+
+        st.write("Analyzed Results: 100")
         
         st.write(f"Number of Positive Results: {positive_count}")
 
         st.write(f"Number of Negative Results: {negative_count}")
+
+        st.write(f"Number of Neutral Results: {100 - positive_count - negative_count}")
     
         st.write(f"Overall Sentiment: {overall_sentiment}")
         
